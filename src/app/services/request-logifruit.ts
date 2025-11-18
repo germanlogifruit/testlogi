@@ -22,11 +22,11 @@ export class RequestLogifruit {
     return this.http.get<Table>(`http://localhost:3000/api/cliente/movimiento/entrada?idOperador=10003&startDate=${startParam}&endDate=${endParam}&idioma=es`, {withCredentials: true})
   }
 
-  public tableParams(startParam: string, endParam: string, idOpe: string){
+  public tableParams(startParam: string, endParam: string, idOperador: string){
     return this.http.get<Table>(`http://localhost:3000/api/cliente/movimiento/entrada`,{
       withCredentials: true,
       params: {
-        idOperador: idOpe,
+        idOperador: idOperador,
         startDate: startParam,
         endDate: endParam,
         idioma: 'es'
