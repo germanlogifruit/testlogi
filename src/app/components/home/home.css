@@ -238,7 +238,6 @@ mat-expansion-panel {
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: all 0.15s ease-in-out;
-
 }
  
 .btn-verde:hover {
@@ -270,7 +269,6 @@ mat-expansion-panel {
   background: var(--logifruit-degradado);
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 15px;
 }
  
 .btn-verde-degradado:hover:not(:disabled) {

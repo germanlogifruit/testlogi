@@ -1,0 +1,30 @@
+<!--
+<form #miFormulario="ngForm" (ngSubmit)="enviarFormulario()">
+  <label>Nombre:</label>
+  <input type="text" name="username" [(ngModel)]="usuario.username" required>
+
+  <label>Email:</label>
+  <input type="email" name="password" [(ngModel)]="usuario.password" required>
+
+  <button type="submit" [disabled]="!miFormulario.valid">Enviar</button>
+  
+</form>
+-->
+
+
+<form class="example-form" (ngSubmit)="enviarFormulario()">
+  <mat-form-field class="example-full-width">
+    <mat-label>Nombre de usuario</mat-label>
+    <input matInput name="username" [(ngModel)]="usuario.username" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Contraseña</mat-label>
+    <input matInput  name="password" [(ngModel)]="usuario.password" required>
+  </mat-form-field>
+  <br>
+    <button type="submit" matButton="outlined" (click)="getResponse()">Enviar</button>
+</form>
+  <button matButton="filled" (click)="getResponse()">ACCEDER PRIVADO</button>
+  <button matButton="filled" (click)="getAut()">COMPROBAR AUT</button>
+  <button matButton="filled" >TEST</button>
